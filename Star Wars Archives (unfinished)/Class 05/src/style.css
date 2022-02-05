@@ -1,0 +1,138 @@
+body {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    height: 100%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.small {
+    height: 30vh;
+}
+
+.medium {
+    height: 40vh;
+}
+
+.imgBtn {
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#loader {
+    height: 10vh;
+}
+
+#nextBtn,
+#prevBtn {
+    margin-top: 10vh;
+}
+
+#result {
+    height: 40vh;
+}
+
+#result_ships {
+    height: 40vh;
+}
+
+
+/* HIDDEN PEOPLE TABLE */
+
+.people_hidden {
+    display: none;
+}
+
+
+/* HIDDEN SHIPS TABLE */
+
+.ship_hidden {
+    display: none;
+}
+
+
+/* Table People*/
+
+table {
+    /* margin-top: 10vh; */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    text-align: center;
+}
+
+thead {
+    color: rgb(252, 223, 43);
+}
+
+
+/* PAGINATION */
+
+button {
+    background: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    cursor: pointer;
+}
+
+.page-btn {
+    background: #ddd;
+    color: #2c303a;
+    height: 35px;
+    border-radius: 2px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: background 0.3s ease;
+    margin: 0 2px;
+    margin-left: 10px;
+}
+
+.page-btn:first-of-type {
+    margin-left: 0;
+}
+
+.page-btn:last-of-type {
+    margin-right: 0;
+}
+
+.page-btn:not([class$='-page']) {
+    width: 35px;
+}
+
+.pagination-buttons {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding-top: 10vh;
+}
+
+.hidden {
+    margin-top: 35vh;
+    display: none;
+}
+
+.page-btn[class*='-page'] {
+    background: #ccc;
+    font-size: 0.6em;
+    font-weight: 700;
+}
+
+.page-btn.active {
+    background: rgb(222, 197, 38);
+    color: #fff;
+}
+
+.page-btn[disabled] {
+    opacity: 0.3;
+}
